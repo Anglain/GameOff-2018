@@ -46,17 +46,31 @@ function Map:create()
 		cameraPosition = {
 			x = 0,
 			y = -3
+		},
+
+		-- Player walk borders
+		borders = {
+			left = 0,
+			right = 0
 		}
 	}
 
+	-- Generating quad list from the spritesheet to fill in the ground
 	this.tileSprites = generateQuads(this.spritesheet, this.tileWidth, this.tileHeight)
 
+	-- Counting and saving pixel size of the map
 	this.mapWidthPixels = this.mapWidth * this.tileWidth
 	this.mapHeightPixels = this.mapHeight * this.tileHeight
 
+	-- METATABLE ACTION IN THE HOUSE
 	setmetatable(this, self)
 
+
 	this.player = Player:create(this)
+
+	-- Making standard player borders
+	this.borders.left = 0
+	this.borders.right = this.mapWidthPixels - this.player.width
 
 	this:generateTiles(this)
 
@@ -83,6 +97,8 @@ function Map:update(dt)
 							 math.min(self.player.position.x - virtualWidth / 2,
 							 	      math.min(self.mapWidthPixels - virtualWidth,
 							 	      	       self.player.position.x)))
+
+	
 end
 
 -- Setting tile type on the map

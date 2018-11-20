@@ -85,6 +85,15 @@ function Player:update(dt)
 	self.behaviours[self.currentState](dt)
 
 	self.position.x = self.position.x + self.velocity.x * dt
+
+	-- Keeping the player in the borders of the screen
+	if self.position.x < self.map.borders.left then
+		self.position.x = 0
+	end
+
+	if self.position.x > self.map.borders.right then
+		self.position.x = self.map.borders.right
+	end
 end
 
 -- Rendering the Player - goes right into the love.draw

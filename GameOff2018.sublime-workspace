@@ -1,0 +1,541 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"colo",
+				"love.graphics.setBackgroundColor"
+			],
+			[
+				"virtual",
+				"virtualHeight"
+			],
+			[
+				"ke",
+				"love.keyboard.isDown"
+			],
+			[
+				"grapre",
+				"love.graphics.rectangle"
+			],
+			[
+				"recta",
+				"love.graphics.rectangle"
+			],
+			[
+				"back",
+				"love.graphics.setBackgroundColor"
+			],
+			[
+				"server",
+				"serverIpAddress"
+			],
+			[
+				"Listen",
+				"ListenForIncommingRequests"
+			],
+			[
+				"client",
+				"clientMessage"
+			],
+			[
+				"tcp",
+				"tcpListenerThread"
+			],
+			[
+				"Send",
+				"SendMessage"
+			],
+			[
+				"text",
+				"textObject"
+			],
+			[
+				"connected",
+				"connectedTcpClient"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scripts/utility/util.lua",
+			"settings":
+			{
+				"buffer_size": 851,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/Map.lua",
+			"settings":
+			{
+				"buffer_size": 345,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/main.lua",
+			"settings":
+			{
+				"buffer_size": 526,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Lua Love/LuaLove.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Love2D"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: File"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: Project"
+				]
+			],
+			[
+				"Packages/Lua Love/LuaLove.sublime-build",
+				"Love2D"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"set synt lua lo",
+				"Set Syntax: Lua (Love)"
+			],
+			[
+				"set synt lua l",
+				"Set Syntax: Lua (Love)"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"exit",
+			"ls",
+			"ls -la"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018",
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/scripts"
+	],
+	"file_history":
+	[
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/Map.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/push.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/images/push.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/GameOff2018.sublime-project",
+		"/home/anglain/Storage/Coding/Love_Projects/BackdoorQuest/BackdoorQuest.sublime-project",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-1/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-1-exercise/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-1-exercise/Map.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-1-exercise/Util.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-1/Map.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-0-exercise/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-0/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-0-exercise/push.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/Mario-CS50.sublime-project",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/lovedemo/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/mario-11/Map.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/Mario_CS50/lovedemo/push.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/BackdoorQuest/tiled/bq_level1.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/BackdoorQuest/tiled/tiledLuaExportStructure.txt",
+		"/home/anglain/Storage/Coding/Love_Projects/BackdoorQuest/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/BackdoorQuest/Tile.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/BackdoorQuest/Map.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/BackdoorQuest/Tileset.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/libraries/classic.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/conf.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/player.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/enemy.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/bullet.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/images/cup.png",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/images/balls_one_ball_sprite.png",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/circle.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/rectangle.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/shape.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/libraries/tick.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/tick.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/classic.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/example.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/SheepolutionTutorial/main.love",
+		"/home/anglain/Storage/Coding/Unity_Projects/TestAssignmentTCP/Assets/Scripts/GetSystemTime.cs",
+		"/home/anglain/Storage/Coding/Unity_Projects/TestAssignmentTCP/Assets/Scripts/Globals.cs",
+		"/home/anglain/Storage/Coding/Unity_Projects/TestAssignmentTCP/Assets/Scripts/TcpConnectedClient.cs",
+		"/home/anglain/Storage/Coding/Unity_Projects/TestAssignmentTCP/Assets/Scripts/TCPChat.cs",
+		"/home/anglain/Storage/Coding/Unity_Projects/TestAssignmentTCP/Assets/Scripts/TCPServer.cs",
+		"/home/anglain/Storage/Coding/Unity_Projects/TestAssignmentTCP/Assets/Scripts/TCPClient.cs",
+		"/home/anglain/Storage/Coding/Unity_Projects/MultiplayerGameProgramming-master/MultiplayerGameProgramming/Tcp/TcpConnectedClient.cs",
+		"/home/anglain/Storage/Coding/Unity_Projects/MultiplayerGameProgramming-master/MultiplayerGameProgramming/Tcp/TCPChat.cs"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"newSource",
+			"getPixelScale",
+			"},\n",
+			"20",
+			")\n",
+			"3",
+			")\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scripts/utility/util.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								599,
+								599
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scripts/Map.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								338,
+								338
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scripts/main.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sublime_haskell_output_panel":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "Packages/User/Love2D_Custom.sublime-build",
+	"project": "GameOff2018.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"map",
+				"Map.lua"
+			],
+			[
+				"man",
+				"main.lua"
+			],
+			[
+				"tileset",
+				"Tileset.lua"
+			],
+			[
+				"tile",
+				"Tile.lua"
+			],
+			[
+				"",
+				"Map.lua"
+			],
+			[
+				"Tile",
+				"Tileset.lua"
+			],
+			[
+				"main",
+				"main.lua"
+			],
+			[
+				"Tileset",
+				"Tileset.lua"
+			],
+			[
+				"mai",
+				"main.lua"
+			],
+			[
+				"ma",
+				"main.lua"
+			],
+			[
+				"bullet",
+				"bullet.lua"
+			],
+			[
+				"playe",
+				"player.lua"
+			],
+			[
+				"ene",
+				"enemy.lua"
+			],
+			[
+				"play",
+				"player.lua"
+			],
+			[
+				"player",
+				"player.lua"
+			],
+			[
+				"pla",
+				"player.lua"
+			],
+			[
+				"circle",
+				"circle.lua"
+			],
+			[
+				"circ",
+				"circle.lua"
+			],
+			[
+				"rect",
+				"rectangle.lua"
+			],
+			[
+				"sha",
+				"shape.lua"
+			],
+			[
+				"tic",
+				"libraries/tick.lua"
+			],
+			[
+				"ex",
+				"example.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Storage/Igor/KMA_Software_Engineering/3-1/FP/Week 1/Hw_01.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

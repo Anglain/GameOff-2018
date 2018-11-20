@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"syntax_override":
+	{
+		"\\.lua$": ["Lua Love", "LuaLove"],
+		"\\.sublime-project$": ["JavaScript", "JSON"]
+	}
+}

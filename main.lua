@@ -71,8 +71,9 @@ function love.draw()
 
 	love.graphics.clear(247 / 255, 232 / 255, 64 / 255, 1)
 
-	-- Map movement according to the camera offset
-	love.graphics.translate(math.floor(-map.camX + 0.5), math.floor(-map.camY + 0.5))
+	-- Map movement according to the camera position set in Map
+	love.graphics.translate(math.floor(-map.cameraPosition.x + 0.5),
+		                    math.floor(-map.cameraPosition.y + 0.5))
 	map:render()
 
 	push:apply('end')

@@ -28,8 +28,7 @@ TILE_WALKING_GROUND_RIGHT_SIDE = 59
 
 -- Camera scroll speed
 local scrollSpeed = 169
-local tileRenderOffset = 16
-
+local tileRenderOffset = 0
 
 --[[ ============ FUNCTIONS ============ ]]
 function Map:create()
@@ -43,9 +42,11 @@ function Map:create()
 		mapHeight = 16,
 		tiles = {},
 
-		-- Camera parameters
-		camX = 0,
-		camY = -3
+		-- Camera position parameters
+		cameraPosition = {
+			x = 0,
+			y = -3
+		}
 	}
 
 	this.tileSprites = generateQuads(this.spritesheet, this.tileWidth, this.tileHeight)
@@ -75,19 +76,21 @@ function Map:create()
 end
 
 function Map:update(dt)
-	-- if love.keyboard.isDown('left') then
-	-- 	self.camX = math.max(0, self.camX - dt * scrollSpeed)
-	-- elseif love.keyboard.isDown('right') then
-	-- 	self.camX = math.min(self.camX + dt * scrollSpeed, self.mapWidthPixels - virtualWidth - self.tileWidth)
-	-- end
-
 	self.player:update(dt)
+
+	-- Keeping camera on the player and preventing it to scroll through the borders of the screen
+	self.cameraPosition.x = math.max(0,
+							 math.min(self.player.position.x - virtualWidth / 2,
+							 	      math.min(self.mapWidthPixels - virtualWidth,
+							 	      	       self.player.position.x)))
 end
 
+-- Setting tile type on the map
 function Map:setTile(x, y, tile)
 	self.tiles[x + (y-1) * self.mapWidth] = tile
 end
 
+-- Getting tile type from the map
 function Map:getTile(x, y)
 	return self.tiles[x + (y-1) * self.mapWidth]
 end
@@ -124,6 +127,7 @@ function Map:generateTiles(this)
 	end
 end
 
+-- Rendering the Map - goes right into the love.draw
 function Map:render()
 	love.graphics.draw(self.spriteBatch)
 	self.player:render()

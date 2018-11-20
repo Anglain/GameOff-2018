@@ -55,6 +55,8 @@ function Map:create()
 
 	setmetatable(this, self)
 
+	this.player = Player:create(this)
+
 	this:generateTiles(this)
 
 	-- Sprite batch for effective tile drawing
@@ -73,17 +75,13 @@ function Map:create()
 end
 
 function Map:update(dt)
-	if love.keyboard.isDown('left') then
-		self.camX = math.max(0, self.camX - dt * scrollSpeed)
-	elseif love.keyboard.isDown('right') then
-		self.camX = math.min(self.camX + dt * scrollSpeed, self.mapWidthPixels - virtualWidth - self.tileWidth)
-	end
+	-- if love.keyboard.isDown('left') then
+	-- 	self.camX = math.max(0, self.camX - dt * scrollSpeed)
+	-- elseif love.keyboard.isDown('right') then
+	-- 	self.camX = math.min(self.camX + dt * scrollSpeed, self.mapWidthPixels - virtualWidth - self.tileWidth)
+	-- end
 
-	if love.keyboard.isDown('up') then
-		self.camY = math.max(0, self.camY - dt * scrollSpeed)
-	elseif love.keyboard.isDown('down') then
-		self.camY = math.min(self.camY + dt * scrollSpeed, self.mapHeightPixels - virtualHeight)
-	end
+	self.player:update(dt)
 end
 
 function Map:setTile(x, y, tile)
@@ -128,4 +126,5 @@ end
 
 function Map:render()
 	love.graphics.draw(self.spriteBatch)
+	self.player:render()
 end

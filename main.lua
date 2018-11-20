@@ -10,14 +10,15 @@
 
 --[[ ============ REQUIRES ============ ]]
 push = require 'utility/push'
+require 'Player'
 require 'Map'
 
 --[[ ============ VARIABLES ============ ]]
 virtualWidth = 480
 virtualHeight = 320
 
-windowWidth = 1920
-windowHeight = 1080
+windowWidth = 960
+windowHeight = 640
 
 map = Map:create()
 
@@ -36,7 +37,7 @@ function love.load()
 	love.graphics.setDefaultFilter('nearest', 'nearest')
 
 	push:setupScreen(virtualWidth, virtualHeight, windowWidth, windowHeight, {
-		fullscreen = true,
+		fullscreen = false,
 		resizeable = true
 	})
 end

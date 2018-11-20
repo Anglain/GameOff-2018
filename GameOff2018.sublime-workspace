@@ -67,7 +67,16 @@
 			"file": "main.lua",
 			"settings":
 			{
-				"buffer_size": 2022,
+				"buffer_size": 2055,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Player.lua",
+			"settings":
+			{
+				"buffer_size": 740,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -76,7 +85,7 @@
 			"file": "Map.lua",
 			"settings":
 			{
-				"buffer_size": 3248,
+				"buffer_size": 3408,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -260,7 +269,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -269,15 +278,80 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2022,
+						"buffer_size": 2055,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								327,
-								327
+								381,
+								381
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 408.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Player.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								670,
+								670
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "Map.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3306,
+								3306
 							]
 						],
 						"settings":
@@ -291,36 +365,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Map.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3248,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2263,
-								2263
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -343,11 +387,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -359,7 +410,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 108.0
+		"height": 152.0
 	},
 	"output.find_results":
 	{
@@ -495,7 +546,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

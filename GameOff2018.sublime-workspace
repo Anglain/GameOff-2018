@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"TILE_WALKING_GROUND",
+				"TILE_WALKING_GROUND_LEFT_SIDE"
+			],
+			[
 				"colo",
 				"love.graphics.setBackgroundColor"
 			],
@@ -60,28 +64,19 @@
 	"buffers":
 	[
 		{
-			"file": "scripts/utility/util.lua",
+			"file": "main.lua",
 			"settings":
 			{
-				"buffer_size": 851,
+				"buffer_size": 2022,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "scripts/Map.lua",
+			"file": "Map.lua",
 			"settings":
 			{
-				"buffer_size": 345,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "scripts/main.lua",
-			"settings":
-			{
-				"buffer_size": 526,
+				"buffer_size": 3248,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -166,11 +161,13 @@
 	},
 	"expanded_folders":
 	[
-		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018",
-		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/scripts"
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018"
 	],
 	"file_history":
 	[
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/scripts/main.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/scripts/utility/util.lua",
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/scripts/Map.lua",
 		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/Map.lua",
 		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/main.lua",
 		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/push.lua",
@@ -222,7 +219,7 @@
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -236,6 +233,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\n    ",
+			"\n",
+			"\t\n",
 			"newSource",
 			"getPixelScale",
 			"},\n",
@@ -265,79 +265,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "scripts/utility/util.lua",
+					"file": "main.lua",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 851,
+						"buffer_size": 2022,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								599,
-								599
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "scripts/Map.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 345,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								338,
-								338
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "scripts/main.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 526,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								150,
-								150
+								327,
+								327
 							]
 						],
 						"settings":
@@ -350,7 +290,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Map.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2263,
+								2263
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -358,7 +328,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 33.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -403,7 +373,7 @@
 	"project": "GameOff2018.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":

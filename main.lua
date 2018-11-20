@@ -7,6 +7,7 @@
 	This is the main file which represents main functionality of the game.
 ]]
 
+
 --[[ ============ REQUIRES ============ ]]
 push = require 'utility/push'
 require 'Map'
@@ -15,8 +16,8 @@ require 'Map'
 virtualWidth = 480
 virtualHeight = 320
 
-windowWidth = 1280
-windowHeight = 720
+windowWidth = 1920
+windowHeight = 1080
 
 map = Map:create()
 
@@ -35,7 +36,7 @@ function love.load()
 	love.graphics.setDefaultFilter('nearest', 'nearest')
 
 	push:setupScreen(virtualWidth, virtualHeight, windowWidth, windowHeight, {
-		fullscreen = false,
+		fullscreen = true,
 		resizeable = true
 	})
 end
@@ -67,7 +68,7 @@ end
 function love.draw()
 	push:apply('start')
 
-	love.graphics.clear(0.42, 0.55, 1, 1)
+	love.graphics.clear(247 / 255, 232 / 255, 64 / 255, 1)
 
 	-- Map movement according to the camera offset
 	love.graphics.translate(math.floor(-map.camX + 0.5), math.floor(-map.camY + 0.5))

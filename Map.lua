@@ -7,6 +7,7 @@
 	This file is responsible for drawing ground and background tiles.
 ]]
 
+
 --[[ ============ REQUIRES ============ ]]
 require 'utility/util'
 
@@ -27,6 +28,7 @@ TILE_WALKING_GROUND_RIGHT_SIDE = 59
 
 -- Camera scroll speed
 local scrollSpeed = 169
+local tileRenderOffset = 16
 
 
 --[[ ============ FUNCTIONS ============ ]]
@@ -37,7 +39,7 @@ function Map:create()
 		spritesheet = love.graphics.newImage('images/simple_tileset.png'),
 		tileWidth = 32,
 		tileHeight = 32,
-		mapWidth = 20,
+		mapWidth = 16,
 		mapHeight = 16,
 		tiles = {},
 
@@ -62,7 +64,7 @@ function Map:create()
 	for y = 1, this.mapHeight do
 		for x = 1, this.mapWidth do
 			this.spriteBatch:add(this.tileSprites[this:getTile(x,y)],
-								 (x - 1) * this.tileWidth,
+								 (x - 1) * this.tileWidth - tileRenderOffset,
 								 (y - 1) * this.tileHeight)
 		end
 	end
@@ -74,7 +76,7 @@ function Map:update(dt)
 	if love.keyboard.isDown('left') then
 		self.camX = math.max(0, self.camX - dt * scrollSpeed)
 	elseif love.keyboard.isDown('right') then
-		self.camX = math.min(self.camX + dt * scrollSpeed, self.mapWidthPixels - virtualWidth)
+		self.camX = math.min(self.camX + dt * scrollSpeed, self.mapWidthPixels - virtualWidth - self.tileWidth)
 	end
 
 	if love.keyboard.isDown('up') then
@@ -92,6 +94,7 @@ function Map:getTile(x, y)
 	return self.tiles[x + (y-1) * self.mapWidth]
 end
 
+-- All map generation code goes here
 function Map:generateTiles(this)
 	-- Set all the map with empty tiles so the rendering won't crash if something is not rendered
 	for y = 1, this.mapHeight do

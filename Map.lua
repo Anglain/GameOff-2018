@@ -26,9 +26,6 @@ TILE_WALKING_GROUND_LEFT_SIDE = 57
 TILE_SOLID_GROUND = 58
 TILE_WALKING_GROUND_RIGHT_SIDE = 59
 
--- Camera scroll speed
-local scrollSpeed = 169
-local tileRenderOffset = 0
 
 --[[ ============ FUNCTIONS ============ ]]
 function Map:create()
@@ -65,28 +62,37 @@ function Map:create()
 	-- METATABLE ACTION IN THE HOUSE
 	setmetatable(this, self)
 
-
 	this.player = Player:create(this)
 
-	-- Making standard player borders
-	this.borders.left = 0
-	this.borders.right = this.mapWidthPixels - this.player.width
-
-	this:generateTiles(this)
-
-	-- Sprite batch for effective tile drawing
-	this.spriteBatch = love.graphics.newSpriteBatch(this.spritesheet, this.mapWidth * this.mapHeight)
-
-	-- Create sprite batch from tile quads
-	for y = 1, this.mapHeight do
-		for x = 1, this.mapWidth do
-			this.spriteBatch:add(this.tileSprites[this:getTile(x,y)],
-								 (x - 1) * this.tileWidth - tileRenderOffset,
-								 (y - 1) * this.tileHeight)
-		end
-	end
+	this:reload()
 
 	return this
+end
+
+-- Moving some elements from the map into the separate function, so that
+-- we can update map's contents and everything gets updated
+function Map:reload()
+	-- Counting and saving pixel size of the map
+	self.mapWidthPixels = self.mapWidth * self.tileWidth
+	self.mapHeightPixels = self.mapHeight * self.tileHeight
+
+	-- Making standard player borders
+	self.borders.left = 0
+	self.borders.right = self.mapWidthPixels - self.player.width
+
+	self:generateTiles(self)
+
+	-- Sprite batch for effective tile drawing
+	self.spriteBatch = love.graphics.newSpriteBatch(self.spritesheet, self.mapWidth * self.mapHeight)
+
+	-- Create sprite batch from tile quads
+	for y = 1, self.mapHeight do
+		for x = 1, self.mapWidth do
+			self.spriteBatch:add(self.tileSprites[self:getTile(x,y)],
+								 (x - 1) * self.tileWidth,
+								 (y - 1) * self.tileHeight)
+		end
+	end
 end
 
 function Map:update(dt)

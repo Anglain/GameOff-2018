@@ -49,7 +49,7 @@ function Player:create(map)
 
 	-- Setting standard Player position
 	-- (NOT SURE HOW TF DOES IT WORK BUT IT WORKS APPARENTLY)
-	this.position.x = map.tileWidth * 10
+	this.position.x = map.tileWidth * 2
 	this.position.y = map.tileHeight * ((map.mapHeight - 2) / 2) - this.height
 
 	-- While no animations are present, we just take our only sprite to be
@@ -62,6 +62,11 @@ function Player:create(map)
 	-- The only state currently is 'idle' - we also walk in this state, wow
 	this.behaviours = {
 		['idle'] = function (dt)
+			if love.keyboard.isDown('left') or love.keyboard.isDown('right') then
+				this.currentState = 'walking'
+			end
+		end,
+		['walking'] = function (dt)
 			if love.keyboard.isDown('left') then
 				direction = 'left'
 				this.velocity.x = -80
@@ -70,6 +75,7 @@ function Player:create(map)
 				this.velocity.x = 80
 			else
 				this.velocity.x = 0
+				this.currentState = 'idle'
 			end
 		end
 	}

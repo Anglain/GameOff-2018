@@ -321,7 +321,7 @@ Gspot.mousewheel = function(this, x, y)
 		local element = this.mousein
 		local call = y > 0 and element.wheelup or element.wheeldown
 		if call then
-			local mx, my = love.mouse.getPosition()
+			local mx, my = this.getmouse()
 			call(element, mx, my)
 		end
 	end

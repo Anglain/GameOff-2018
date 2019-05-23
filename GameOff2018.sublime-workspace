@@ -75,8 +75,19 @@
 			"file": "main.lua",
 			"settings":
 			{
-				"buffer_size": 2511,
+				"buffer_size": 2685,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "--[[\n\n\tGame Off 2018 game prototype\n\tCreated by: Shudra Igor\n\tDate: 26.11.18\n\t\n\tThis file is responsible for placing space station rooms.\n]]\n\nRoom = {}\nRoom.__index = Room\n\nroomTypes = {\n\trestroom = {\n\t\timage = 'images/restroom.png'\n\t},\n\taviary = {\n\t\timage = 'images/aviary.png'\n\t},\n\tdna_lab = {\n\t\timage = 'images/genLab.png'\n\t}\n}\n\nfunction Room:create(type)\n\n\tlocal this = {\n\t\tmapPosition = {\n\t\t\tx = 0,\n\t\t\ty = 0\n\t\t},\n\t\ttype = '',\n\t\timage = nil\n\t}\n\n\tsetmetatable(this, self)\n\n\treturn this\nend\n\nfunction Room:update(dt)\n\nend\n\nfunction Room:render()\n\tlove.graphics.draw()\nend",
+			"file": "Room.lua",
+			"file_size": 578,
+			"file_write_time": 131877429524883512,
+			"settings":
+			{
+				"buffer_size": 573,
 				"line_ending": "Unix"
 			}
 		},
@@ -84,7 +95,7 @@
 			"file": "Interface.lua",
 			"settings":
 			{
-				"buffer_size": 476,
+				"buffer_size": 410,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -93,7 +104,7 @@
 			"file": "Player.lua",
 			"settings":
 			{
-				"buffer_size": 2780,
+				"buffer_size": 2962,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -102,16 +113,7 @@
 			"file": "Map.lua",
 			"settings":
 			{
-				"buffer_size": 3615,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/anglain/Storage/Coding/Love_Projects/gspot/main.lua",
-			"settings":
-			{
-				"buffer_size": 12092,
+				"buffer_size": 3947,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -196,10 +198,12 @@
 	},
 	"expanded_folders":
 	[
-		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018"
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018",
+		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/images"
 	],
 	"file_history":
 	[
+		"/home/anglain/Storage/Coding/Love_Projects/gspot/main.lua",
 		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/scripts/main.lua",
 		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/scripts/utility/util.lua",
 		"/home/anglain/Storage/Coding/Love_Projects/GameOff-2018/scripts/Map.lua",
@@ -254,7 +258,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -304,15 +308,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2511,
+						"buffer_size": 2685,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2022,
-								2022
+								2319,
+								2319
 							]
 						],
 						"settings":
@@ -322,27 +326,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1125.0,
+						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Interface.lua",
+					"file": "Room.lua",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 476,
+						"buffer_size": 573,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								416,
-								416
+								428,
+								428
 							]
 						],
 						"settings":
@@ -354,24 +358,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Player.lua",
+					"file": "Interface.lua",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2780,
+						"buffer_size": 410,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1116,
-								1116
+								396,
+								396
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Player.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1877,
+								1877
 							]
 						],
 						"settings":
@@ -380,8 +413,8 @@
 							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.x": 13.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -390,24 +423,24 @@
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "Map.lua",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3615,
+						"buffer_size": 3947,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2113,
-								2113
+								2086,
+								2086
 							]
 						],
 						"settings":
@@ -417,40 +450,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1110.0,
+						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/anglain/Storage/Coding/Love_Projects/gspot/main.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12092,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2745.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -458,7 +461,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -510,7 +513,7 @@
 	"project": "GameOff2018.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":

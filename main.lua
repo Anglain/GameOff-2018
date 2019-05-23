@@ -9,7 +9,7 @@
 
 
 --[[ ============ REQUIRES ============ ]]
-push = require 'utility/push'
+-- push = require 'utility/push'
 require 'Player'
 require 'Map'
 require 'Interface'
@@ -35,12 +35,6 @@ map = Map:create()
 
 --]]
 function love.load()
-	love.graphics.setDefaultFilter('nearest', 'nearest')
-
-	push:setupScreen(virtualWidth, virtualHeight, windowWidth, windowHeight, {
-		fullscreen = false,
-		resizeable = true
-	})
 
 	loadInterface()
 end
@@ -57,7 +51,6 @@ end
 --]]
 function love.update(dt)
 	map:update(dt)
-	gui:update(dt)
 end
 
 --[[
@@ -71,8 +64,6 @@ end
 
 --]]
 function love.draw()
-	push:apply('start')
-
 	love.graphics.clear(247 / 255, 232 / 255, 64 / 255, 1)
 
 	-- Map movement according to the camera position set in Map
@@ -82,8 +73,6 @@ function love.draw()
 
 	map:render()
 	drawInterface()
-
-	push:apply('end')
 end
 
 function love.keypressed(key)
@@ -100,26 +89,4 @@ function love.keypressed(key)
     	map.mapWidth = map.mapWidth - 1
     	map:reload()
     end
-
-    gui:keypress(key)
-end
-
-function love.textinput(key)
-	gui:textinput(key)
-end
-
-function love.mousepressed(x, y, button)
-	gui:mousepress(x, y, button)
-end
-
-function love.mousereleased(x, y, button)
-	gui:mouserelease(x, y, button)
-end
-
-function wheelMoved(x, y)
-	gui:mouseWheel(x, y)
-end
-
-function love.resize(w, h)
-	push:resize(w, h)
 end

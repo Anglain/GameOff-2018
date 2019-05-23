@@ -98,7 +98,7 @@ end
 function Map:update(dt)
 	self.player:update(dt)
 
-	-- Keeping camera on the player and preventing it to scroll through the borders of the screen
+	-- Keeping camera on the player and preventing from scrolling through the borders of the screen
 	self.cameraPosition.x = math.max(0,
 							 math.min(self.player.position.x - virtualWidth / 2,
 							 	      math.min(self.mapWidthPixels - virtualWidth,

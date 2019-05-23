@@ -11,19 +11,25 @@ Room = {}
 Room.__index = Room
 
 roomTypes = {
-	restroom = {},
-	aviary = {},
-	dna_lab = {}
+	restroom = {
+		image = 'images/restroom.png'
+	},
+	aviary = {
+		image = 'images/aviary.png'
+	},
+	dna_lab = {
+		image = 'images/genLab.png'
+	}
 }
 
 function Room:create(type)
 
 	local this = {
 		mapPosition = {
-			x = nil,
-			y = nil
+			x = 0,
+			y = 0
 		},
-		type = nil,
+		roomType = type,
 		image = nil
 	}
 
@@ -33,7 +39,7 @@ function Room:create(type)
 end
 
 function Room:update(dt)
-
+	
 end
 
 function Room:render()
